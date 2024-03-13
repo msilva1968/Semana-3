@@ -1,14 +1,13 @@
-import Conta from "../types/GravaUsuario.js";
+import Grava from "../types/GravaUsuario.js";
 const elementoRegistroTransacoesExtrato = document.querySelector(".extrato .registro-transacoes");
 renderizarExtrato();
 function renderizarExtrato() {
-    const gruposTransacoes = Conta.getGruposTransacoes();
+    const gruposTransacoes = Grava.getGruposTransacoes();
     elementoRegistroTransacoesExtrato.innerHTML = "";
     let htmlRegistroTransacoes = "";
     for (let grupoTransacao of gruposTransacoes) {
         let htmlTransacaoItem = "";
         for (let transacao of grupoTransacao.usuario) {
-            //            <strong>Publicação: </strong>${formatarData(transacao.publicacao, FormatoData.PADRAO)}<BR><BR>
             htmlTransacaoItem += `
                 <div class="transacao-item">
                         <span class="tipo"><strong>ID:</strong> ${transacao.idusuario}<BR>
@@ -25,7 +24,7 @@ function renderizarExtrato() {
         `;
     }
     if (htmlRegistroTransacoes === "") {
-        htmlRegistroTransacoes = "<div>Não há livros cadastrados.</div>";
+        htmlRegistroTransacoes = "<div>Não há usuários cadastrados.</div>";
     }
     elementoRegistroTransacoesExtrato.innerHTML = htmlRegistroTransacoes;
 }

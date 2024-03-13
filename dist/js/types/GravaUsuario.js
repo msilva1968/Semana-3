@@ -3,10 +3,14 @@ const Grava = {
     getGruposTransacoes() {
         const gruposTransacoes = [];
         const listaUsuarios = structuredClone(transacoes);
-        gruposTransacoes.push({
-            usuario: []
-        });
+        let vPush = "S";
         for (let transacao of listaUsuarios) {
+            if (vPush === "S") {
+                vPush = "N";
+                gruposTransacoes.push({
+                    usuario: []
+                });
+            }
             gruposTransacoes.at(-1).usuario.push(transacao);
         }
         return gruposTransacoes;
