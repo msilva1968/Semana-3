@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pro Books</title>
+    <link rel="stylesheet" href="css/app.css" type="text/css" />
+</head>
+<body>
+    <main class="container-padding flex">
+
+        <div class="coluna-central">
+            <section class="block-nova-transacao">
+                <h2>Cadastrando Usuários</h2>
+                <form action="" method="post" novalidate>
+                    <div class="campo">
+                        <label for="valor">Nome:</label><br>
+                        <input type="text" name="nome" id="nome" class="campo-input" required />
+                    </div>
+                    <div class="campo">
+                        <label for="valor">eMail:</label><br>
+                        <input type="text" name="email" id="email" class="campo-input" required />
+                    </div>
+                    <div class="campo">
+                        <label for="valor">CPF (000.000.000-00):</label><br>
+                        <input type="text" name="cpf" id="cpf" class="campo-input-number" maxlength="14" required />
+                    </div>
+                    <div class="campo">
+                        <label for="valor">Telefone (00)0000-0000:</label><br>
+                        <input type="text" name="telefone" id="telefone" class="campo-input-number"  step="0.01" required />
+                    </div>
+                    <div class="campo">
+                        <label for="valor">Estado:</label><br>
+                        <input type="text" name="estado" id="estado" class="campo-input-number" required />
+                    </div>
+                    <div class="campo">
+                        <label for="valor">Cidade:</label><br>
+                        <input type="text" name="cidade" id="cidade" class="campo-input" required />
+                    </div>
+                    <div class="campo">
+                        <label for="valor">Bairro:</label><br>
+                        <input type="text" name="bairro" id="bairro" class="campo-input" required />
+                    </div>
+                    <div class="campo">
+                        <label for="valor">Rua:</label><br>
+                        <input type="text" name="rua" id="rua" class="campo-input" required />
+                    </div>
+                    <div class="campo">
+                        <label for="valor">Número:</label><br>
+                        <input type="text" name="numero" id="numero" class="campo-input" required />
+                    </div>
+                    <div class="campo">
+                        <label for="valor">Complemento:</label><br>
+                        <input type="text" name="complemento" id="complemento" class="campo-input" required />
+                    </div>
+                    <div class="campo">
+                        <button type="submit" class="btn">
+                            Cadastrar Usuário
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </div>
+
+        <aside class="extrato">
+            <h3>Listando Usuários</h3>
+            <div class="registro-transacoes">
+                <div class="transacoes-group">
+                    <strong class="mes-group"></strong>
+                    <div class="transacao-item">
+                        <div class="transacao-info">
+                            <span class="tipo"></span>
+                            <strong class="valor"></strong>
+                        </div>
+                        <time class="data"></time>
+                    </div>
+                    <div class="transacao-item">
+                        <div class="transacao-info">
+                            <span class="tipo"></span>
+                            <strong class="valor"></strong>
+                        </div>
+                        <time class="data"></time>
+                    </div>
+                </div>
+
+                <div class="transacoes-group">
+                    <strong class="mes-group"></strong>
+                    <div class="transacao-item">
+                        <div class="transacao-info">
+                            <span class="tipo"></span>
+                            <strong class="valor"></strong>
+                        </div>
+                        <time class="data"></time>
+                    </div>
+                    <div class="transacao-item">
+                        <div class="transacao-info">
+                            <span class="tipo"></span>
+                            <strong class="valor"></strong>
+                        </div>
+                        <time class="data"></time>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
