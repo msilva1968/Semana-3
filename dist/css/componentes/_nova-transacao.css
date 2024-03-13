@@ -4,7 +4,7 @@
     border-radius: 8px;
     background-position: bottom left, bottom 23px right, top right;
     background-repeat: no-repeat;
-    background-color: var(--cor-tercearia);
+    background-color: rgba(255, 255, 128, .5);
     margin-top: 20px;
 
     & h2 {
